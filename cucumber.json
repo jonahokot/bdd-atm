@@ -1,0 +1,6 @@
+{
+    "default": {
+      "publishQuiet":false,
+      "require":["atmfeatures/**/*.js"]
+    }
+}
