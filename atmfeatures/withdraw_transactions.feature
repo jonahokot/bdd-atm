@@ -1,4 +1,4 @@
-# Attempt to test all Gherkin keywords in one Feature as a comment
+# # Attempt to test all Gherkin keywords in one Feature as a comment
 
 Feature: Withdraw Transactions at the ATM
 
@@ -16,9 +16,9 @@ Feature: Withdraw Transactions at the ATM
       When I withdraw amount UGX "<withdrawAmount>"
       Then Account balance becomes UGX "<newBalance>"
 
-    Examples:
-      | withdrawAmount | newBalance |
-      | 55000          | 40000      |
-      | 110000         | 95000      |
-      | 80000          | 95000      |
+#     Examples:
+#       | withdrawAmount | newBalance |
+#       | 55000          | 40000      |
+#       # | 110000         | 95000      |
+#       # | 80000          | 95000      |
 

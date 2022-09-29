@@ -1,6 +1,16 @@
 {
     "default": {
       "publishQuiet":false,
-      "require":["atmfeatures/**/*.js"]
-    }
+      "require":["/atmfeatures/**/*.js"],
+      "publish":true
+    },
+    "transact":{
+      "paths":["/atmfeatures/transact_money_at_atm.feature"],
+      "tags":"@Withdraw & @Success"
+    },
+    "atm":"atmfeatures -r atmfeatures/step_defintions ",
+    "failure":"-t @Failure",
+    "success":"-t @Success",
+    "withdraw":"-t @Withdraw"
+ 
 }

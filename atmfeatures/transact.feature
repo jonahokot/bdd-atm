@@ -13,15 +13,15 @@ Feature: Transact money at ATM
             And transaction fees of UGX "5000"
             But maintaining minimum balance of UGX "20000"
 
-        # @Withdraw @Success
-        # Example: Successful withdrawal
-        #     When I withdraw UGX "50000"
-        #     Then Account balance is "45000"
+        @Withdraw @Success
+        Example: Successful withdrawal
+            When I withdraw UGX "50000"
+            Then Account balance is "45000"
 
-        # @Withdraw @Failure
-        # Example: Failed withdrawal
-        #     When I withdraw UGX "80000"
-        #     Then Account balance is "95000"
+        @Withdraw @Failure
+        Example: Failed withdrawal
+            When I withdraw UGX "80000"
+            Then Account balance is not "95000"
 
     # Rule: Deposit money
 
