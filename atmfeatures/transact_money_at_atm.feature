@@ -1,17 +1,17 @@
 # language: en
-# Attempt to test all Gherkin keywords in one Feature as a comment
+# # Attempt to test all Gherkin keywords in one Feature as a comment
 
-Feature: Transact money at ATM
+# Feature: Transact money at ATM
 
-    As a Bank Owner, I want to increase my Clients interactions
-    with their accounts by introducing ATMs
+#     As a Bank Owner, I want to increase my Clients interactions
+#     with their accounts by introducing ATMs
 
-    Rule: Withdraw money
+#     Rule: Withdraw money
 
-        Background: Setting Account transaction conditions
-            Given that account has UGX "100000"
-            And transaction fees of UGX "5000"
-            But maintaining minimum balance of UGX "20000"
+#         Background: Setting Account transaction conditions
+#             Given that account has UGX "100000"
+#             And transaction fees of UGX "5000"
+#             But maintaining minimum balance of UGX "20000"
 
         # @Withdraw @Success
         # Example: Successful withdrawal

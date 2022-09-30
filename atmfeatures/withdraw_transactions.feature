@@ -16,9 +16,9 @@ Feature: Withdraw Transactions at the ATM
       When I withdraw amount UGX "<withdrawAmount>"
       Then Account balance becomes UGX "<newBalance>"
 
-#     Examples:
-#       | withdrawAmount | newBalance |
-#       | 55000          | 40000      |
+    Examples:
+      | withdrawAmount | newBalance |
+      | 55000          | 40000      |
 #       # | 110000         | 95000      |
 #       # | 80000          | 95000      |
 
